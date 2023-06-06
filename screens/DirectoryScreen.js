@@ -19,7 +19,7 @@ const DirectoryScreen = ({ navigation }) => {
             </ListItem>
         );
 
-    }
+    };
 
     return (
         <FlatList
@@ -27,8 +27,8 @@ const DirectoryScreen = ({ navigation }) => {
             renderItem={renderDirectoryItem}
             keyExtractor={(item) => item.id.toString()}
         />
-    )
+    );
 
-}
+};
 
 export default DirectoryScreen;
