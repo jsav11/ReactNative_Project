@@ -1,5 +1,5 @@
 
-import { Image, Platform, StyleSheet, View } from 'react-native';
+import { Image, Platform, StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import CampsiteInfoScreen from './CampsiteInfoScreen';
 import DirectoryScreen from './DirectoryScreen';
@@ -131,18 +131,13 @@ const CustomDrawerContent = (props) => (
         <View style={styles.drawerHeader}>
             <View style={{ flex: 1 }}>
                 <Image source={logo} style={styles.drawerImage} />
-
             </View>
             <View style={{ flex: 2 }}>
                 <Text style={styles.drawerHeaderText}>NuCamp</Text>
-
             </View>
         </View>
         <DrawerItemList {...props} labelStyle={{ fontWeight: 'bold' }} />
-
     </DrawerContentScrollView>
-
-
 );
 
 const Main = () => {
