@@ -36,6 +36,6 @@ const promotionsSlice = createSlice({
                     : 'Fetch failed';
             });
     }
-});
+}); 
 
 export const promotionsReducer = promotionsSlice.reducer;
